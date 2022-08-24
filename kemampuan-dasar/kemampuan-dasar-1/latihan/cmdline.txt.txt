@@ -1,0 +1,1005 @@
+
+1.C:\Users\pptqq>HELP
+For more information on a specific command, type HELP command-name
+ASSOC          Displays or modifies file extension associations.
+ATTRIB         Displays or changes file attributes.
+BREAK          Sets or clears extended CTRL+C checking.
+BCDEDIT        Sets properties in boot database to control boot loading.
+CACLS          Displays or modifies access control lists (ACLs) of files.
+CALL           Calls one batch program from another.
+CD             Displays the name of or changes the current directory.
+CHCP           Displays or sets the active code page number.
+CHDIR          Displays the name of or changes the current directory.
+CHKDSK         Checks a disk and displays a status report.
+CHKNTFS        Displays or modifies the checking of disk at boot time.
+CLS            Clears the screen.
+CMD            Starts a new instance of the Windows command interpreter.
+COLOR          Sets the default console foreground and background colors.
+COMP           Compares the contents of two files or sets of files.
+COMPACT        Displays or alters the compression of files on NTFS partitions.
+CONVERT        Converts FAT volumes to NTFS.  You cannot convert the
+               current drive.
+COPY           Copies one or more files to another location.
+DATE           Displays or sets the date.
+DEL            Deletes one or more files.
+DIR            Displays a list of files and subdirectories in a directory.
+DISKPART       Displays or configures Disk Partition properties.
+DOSKEY         Edits command lines, recalls Windows commands, and
+               creates macros.
+DRIVERQUERY    Displays current device driver status and properties.
+ECHO           Displays messages, or turns command echoing on or off.
+ENDLOCAL       Ends localization of environment changes in a batch file.
+ERASE          Deletes one or more files.
+EXIT           Quits the CMD.EXE program (command interpreter).
+FC             Compares two files or sets of files, and displays the
+               differences between them.
+FIND           Searches for a text string in a file or files.
+FINDSTR        Searches for strings in files.
+FOR            Runs a specified command for each file in a set of files.
+FORMAT         Formats a disk for use with Windows.
+FSUTIL         Displays or configures the file system properties.
+FTYPE          Displays or modifies file types used in file extension
+               associations.
+GOTO           Directs the Windows command interpreter to a labeled line in
+               a batch program.
+GPRESULT       Displays Group Policy information for machine or user.
+GRAFTABL       Enables Windows to display an extended character set in
+               graphics mode.
+HELP           Provides Help information for Windows commands.
+ICACLS         Display, modify, backup, or restore ACLs for files and
+               directories.
+IF             Performs conditional processing in batch programs.
+LABEL          Creates, changes, or deletes the volume label of a disk.
+MD             Creates a directory.
+MKDIR          Creates a directory.
+MKLINK         Creates Symbolic Links and Hard Links
+MODE           Configures a system device.
+MORE           Displays output one screen at a time.
+MOVE           Moves one or more files from one directory to another
+               directory.
+OPENFILES      Displays files opened by remote users for a file share.
+PATH           Displays or sets a search path for executable files.
+PAUSE          Suspends processing of a batch file and displays a message.
+POPD           Restores the previous value of the current directory saved by
+               PUSHD.
+PRINT          Prints a text file.
+PROMPT         Changes the Windows command prompt.
+PUSHD          Saves the current directory then changes it.
+RD             Removes a directory.
+RECOVER        Recovers readable information from a bad or defective disk.
+REM            Records comments (remarks) in batch files or CONFIG.SYS.
+REN            Renames a file or files.
+RENAME         Renames a file or files.
+REPLACE        Replaces files.
+RMDIR          Removes a directory.
+ROBOCOPY       Advanced utility to copy files and directory trees
+SET            Displays, sets, or removes Windows environment variables.
+SETLOCAL       Begins localization of environment changes in a batch file.
+SC             Displays or configures services (background processes).
+SCHTASKS       Schedules commands and programs to run on a computer.
+SHIFT          Shifts the position of replaceable parameters in batch files.
+SHUTDOWN       Allows proper local or remote shutdown of machine.
+SORT           Sorts input.
+START          Starts a separate window to run a specified program or command.
+SUBST          Associates a path with a drive letter.
+SYSTEMINFO     Displays machine specific properties and configuration.
+TASKLIST       Displays all currently running tasks including services.
+TASKKILL       Kill or stop a running process or application.
+TIME           Displays or sets the system time.
+TITLE          Sets the window title for a CMD.EXE session.
+TREE           Graphically displays the directory structure of a drive or
+               path.
+TYPE           Displays the contents of a text file.
+VER            Displays the Windows version.
+VERIFY         Tells Windows whether to verify that your files are written
+               correctly to a disk.
+VOL            Displays a disk volume label and serial number.
+XCOPY          Copies files and directory trees.
+WMIC           Displays WMI information inside interactive command shell.
+
+For more information on tools see the command-line reference in the online help.
+
+2.C:\Users\pptqq>DIR
+ Volume in drive C is Windows
+ Volume Serial Number is D077-E07D
+
+ Directory of C:\Users\pptqq
+
+18/08/2022  12:47    <DIR>          .
+18/08/2022  12:47    <DIR>          ..
+18/08/2022  12:47               513 .bash_history
+18/08/2022  10:29                48 .gitconfig
+16/08/2022  10:12    <DIR>          .idlerc
+29/12/2021  14:28    <DIR>          3D Objects
+29/12/2021  14:28    <DIR>          Contacts
+19/06/2022  08:51    <DIR>          Creative Cloud Files
+19/06/2022  07:43    <DIR>          Desktop
+18/08/2022  23:07    <DIR>          Documents
+18/08/2022  08:56    <DIR>          Downloads
+29/12/2021  14:28    <DIR>          Favorites
+29/12/2021  14:28    <DIR>          Links
+29/12/2021  14:28    <DIR>          Music
+03/02/2022  08:28    <DIR>          OneDrive
+12/08/2022  11:57    <DIR>          Pictures
+29/12/2021  14:28    <DIR>          Saved Games
+29/12/2021  14:29    <DIR>          Searches
+04/02/2022  08:08    <DIR>          Videos
+               2 File(s)            561 bytes
+              17 Dir(s)  133.929.152.512 bytes free
+
+3.C:\Users\pptqq>VER
+
+Microsoft Windows [Version 10.0.19044.1766]
+
+4.C:\Users\pptqq>DATE
+The current date is: 19/08/2022
+Enter the new date: (dd-mm-yy)
+
+5.C:\Users\pptqq>label
+Volume in drive C: is Windows
+Volume Serial Number is D077-E07D
+Volume label (32 characters, ENTER for none)?
+
+Delete current volume label (Y/N)?
+
+Delete current volume label (Y/N)? admin
+
+Delete current volume label (Y/N)? y
+Access Denied as you do not have sufficient privileges or
+the disk may be locked by another process.
+You have to invoke this utility running in elevated mode
+and make sure the disk is unlocked.
+
+6.C:\Users\pptqq>label
+Volume in drive C: is Windows
+Volume Serial Number is D077-E07D
+Volume label (32 characters, ENTER for none)?
+
+Delete current volume label (Y/N)? y
+Access Denied as you do not have sufficient privileges or
+the disk may be locked by another process.
+You have to invoke this utility running in elevated mode
+and make sure the disk is unlocked.
+
+7.C:\Users\pptqq>ping
+
+Usage: ping [-t] [-a] [-n count] [-l size] [-f] [-i TTL] [-v TOS]
+            [-r count] [-s count] [[-j host-list] | [-k host-list]]
+            [-w timeout] [-R] [-S srcaddr] [-c compartment] [-p]
+            [-4] [-6] target_name
+
+Options:
+    -t             Ping the specified host until stopped.
+                   To see statistics and continue - type Control-Break;
+                   To stop - type Control-C.
+    -a             Resolve addresses to hostnames.
+    -n count       Number of echo requests to send.
+    -l size        Send buffer size.
+    -f             Set Don't Fragment flag in packet (IPv4-only).
+    -i TTL         Time To Live.
+    -v TOS         Type Of Service (IPv4-only. This setting has been deprecated
+                   and has no effect on the type of service field in the IP
+                   Header).
+    -r count       Record route for count hops (IPv4-only).
+    -s count       Timestamp for count hops (IPv4-only).
+    -j host-list   Loose source route along host-list (IPv4-only).
+    -k host-list   Strict source route along host-list (IPv4-only).
+    -w timeout     Timeout in milliseconds to wait for each reply.
+    -R             Use routing header to test reverse route also (IPv6-only).
+                   Per RFC 5095 the use of this routing header has been
+                   deprecated. Some systems may drop echo requests if
+                   this header is used.
+    -S srcaddr     Source address to use.
+    -c compartment Routing compartment identifier.
+    -p             Ping a Hyper-V Network Virtualization provider address.
+    -4             Force using IPv4.
+    -6             Force using IPv6.
+
+8.C:\Users\pptqq>robocopy
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : 19 August 2022 09:41:37
+       Simple Usage :: ROBOCOPY source destination /MIR
+
+             source :: Source Directory (drive:\path or \\server\share\path).
+        destination :: Destination Dir  (drive:\path or \\server\share\path).
+               /MIR :: Mirror a complete directory tree.
+
+    For more usage information run ROBOCOPY /?
+
+
+****  /MIR can DELETE files as well as copy them !
+
+
+9.C:\Users\pptqq>vol
+ Volume in drive C is Windows
+ Volume Serial Number is D077-E07D
+
+
+10.C:\Users\pptqq>recover
+RECOVER [drive:][path]filename
+
+11.C:\Users\pptqq>systeminfo
+
+Host Name:                 DESKTOP-DTE73O2
+OS Name:                   Microsoft Windows 10 Home Single Language
+OS Version:                10.0.19044 N/A Build 19044
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          pptq.quantumqolbu@gmail.com
+Registered Organization:   HP Inc.
+Product ID:                00327-70000-00001-AA961
+Original Install Date:     29/12/2021, 22:12:08
+System Boot Time:          04/08/2022, 06:23:04
+System Manufacturer:       HP
+System Model:              HP ZBook Firefly 14 inch G8 Mobile Workstation PC
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 140 Stepping 1 GenuineIntel ~2803 Mhz
+BIOS Version:              HP T76 Ver. 01.09.01, 05/05/2022
+Windows Directory:         C:\windows
+System Directory:          C:\windows\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC+07:00) Bangkok, Hanoi, Jakarta
+Total Physical Memory:     16.064 MB
+Available Physical Memory: 8.142 MB
+Virtual Memory: Max Size:  28.864 MB
+Virtual Memory: Available: 19.721 MB
+Virtual Memory: In Use:    9.143 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\DESKTOP-DTE73O2
+Hotfix(s):                 17 Hotfix(s) Installed.
+                           [01]: KB5015730
+                           [02]: KB4534170
+                           [03]: KB4537759
+                           [04]: KB4545706
+                           [05]: KB4560366
+                           [06]: KB4562830
+                           [07]: KB4566785
+                           [08]: KB4570334
+                           [09]: KB4577266
+                           [10]: KB5003791
+                           [11]: KB5012170
+                           [12]: KB5015807
+                           [13]: KB5007273
+                           [14]: KB5011352
+                           [15]: KB5014035
+                           [16]: KB5014671
+                           [17]: KB5005699
+Network Card(s):           2 NIC(s) Installed.
+                           [01]: Intel(R) Wi-Fi 6 AX201 160MHz
+                                 Connection Name: Wi-Fi
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     192.168.43.1
+                                 IP address(es)
+                                 [01]: 192.168.43.191
+                                 [02]: fe80::d0c0:1ba6:54f9:8198
+                           [02]: Bluetooth Device (Personal Area Network)
+                                 Connection Name: Bluetooth Network Connection
+                                 Status:          Media disconnected
+Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
+                           Virtualization Enabled In Firmware: Yes
+                           Second Level Address Translation: Yes
+                           Data Execution Prevention Available: Yes
+
+12.C:\Users\pptqq>time
+The current time is:  9:46:35,37
+Enter the new time:
+
+13.C:\Users\pptqq>defrag
+
+Defrag <Volumes> <Operations> [<Options>]
+
+Volumes:
+  /C | /AllVolumes      On each volume run only the preferred operations from
+                        the given list of operations.
+  /E | /VolumesExcept <volume paths>
+                        Perform all the given operations on each volume except.
+                        those specified. If the exception list is empty, this
+                        behaves as /AllVolumes.
+  volume paths          Specifies the drive letter followed by a colon, mount point
+                        or volume name. More than one volume can be specified.  Run
+                        all the given operations on each specified volume..
+
+Operations:
+  /A | /Analyze         Perform analysis.
+  /B | /BootOptimize    Perform boot optimization to increase boot performance.
+  /D | /Defrag          Perform traditional defrag (this is the default). On a tiered
+                        volume, traditional defrag is performed only on the Capacity
+                        tier.
+  /G | /TierOptimize    On tiered volumes, optimize files to reside on the appropriate
+                        storage tier.
+  /K | /SlabConsolidate On thinly provisioned volumes, perform slab consolidation to
+                        increase slab usage efficiency.
+  /L | /Retrim          On thinly provisioned volumes, perform retrim to release free
+                        slabs. On SSDs perform retrim to improve write performance.
+  /O | /Optimize        Perform the proper optimization for each media type.
+  /T | /TrackProgress   Track progress of a running operation for a given volume. An
+                        instance can show progress only for a single volume. To see
+                        progress for another volume launch another instance.
+  /U | /PrintProgress   Print the progress of the operation on the screen.
+  /V | /Verbose         Print verbose output containing the fragmentation statistics.
+  /X | /FreespaceConsolidate
+                        Perform free space consolidation, moves free space towards
+                        the end of the volume (even on thin provisioned volumes). On
+                        tiered volumes consolidation is performed only on the Capacity
+                        tier.
+
+Options:
+  /H | /NormalPriority  Run the operation at normal priority (default is low).
+  /I | /MaxRuntime n    Available only with TierOptimize. Tier optimization would
+                        run for at most n seconds on each volume.
+       /LayoutFile <file path>
+                        Available only with BootOptimize. This file contains the list
+                        of files to be optimized.  The default location is
+                        %windir%\Prefetch\layout.ini.
+  /M | /MultiThread [n] Run the operation on each volume in parallel in the background.
+                        For TierOptimize, at most n threads optimize the storage tiers
+                        in parallel. Default value of n is 8. All other optimizations
+                        ignore n.
+       /OnlyPreferred   When volumes are specified explicitly, defrag performs all
+                        the given operations on each specified volume.  This switch
+                        lets defrag run only the preferred operations, from the
+                        given list of operations, on each specified volume.
+
+Examples:
+  Defrag C: /U /V
+  Defrag C: D: /TierOptimize /MultiThread
+  Defrag C:\mountpoint /Analysis /U
+  Defrag /C /H /V
+
+
+14.C:\Users\pptqq>netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+
+15.C:\Users\pptqq>tree
+Folder PATH listing for volume Windows
+Volume serial number is D077-E07D
+C:.
+├───.idlerc
+├───3D Objects
+├───Contacts
+├───Creative Cloud Files
+├───Desktop
+├───Documents
+│   ├───Adobe
+│   │   ├───Adobe Media Encoder
+│   │   │   └───22.0
+│   │   │       └───Presets
+│   │   ├───After Effects 2022
+│   │   │   ├───User Libraries
+│   │   │   ├───User Presets
+│   │   │   └───Video Libraries
+│   │   ├───Photoshop Cloud Associates
+│   │   └───Premiere Pro
+│   │       └───22.0
+│   │           └───Profile-pptqq
+│   │               ├───ArchivedLayouts
+│   │               ├───Layouts
+│   │               ├───Settings
+│   │               │   ├───EssentialSound
+│   │               │   │   └───Default
+│   │               │   │       ├───ambience
+│   │               │   │       ├───dialog
+│   │               │   │       ├───generic
+│   │               │   │       ├───music
+│   │               │   │       └───sfx
+│   │               │   ├───Overlay Presets
+│   │               │   ├───Project View Presets
+│   │               │   ├───Source Patcher Presets
+│   │               │   ├───Timecode Presets
+│   │               │   └───Track Height Presets
+│   │               └───Win
+│   ├───Adobe After Effects Auto-Save
+│   ├───Corel
+│   │   └───Corel Content
+│   │       ├───CorelDRAW
+│   │       │   ├───Artistic Media
+│   │       │   └───Presets
+│   │       │       └───Contour
+│   │       ├───Export Presets
+│   │       ├───Fills
+│   │       │   └───Starter pack
+│   │       ├───Find And Replace
+│   │       ├───Fonts
+│   │       ├───Image Lists
+│   │       ├───Images
+│   │       │   └───Starter pack
+│   │       ├───Palettes
+│   │       ├───Photo Frames
+│   │       ├───Symbols
+│   │       ├───Templates
+│   │       │   └───Starter pack
+│   │       └───Writing Tools
+│   ├───Custom Office Templates
+│   ├───GOMMixMax
+│   │   ├───Export
+│   │   └───Snapshot
+│   └───Wondershare
+│       └───Wondershare Filmora
+│           ├───Backup
+│           ├───Fonts
+│           ├───Installed Effects
+│           │   └───noad
+│           ├───Output
+│           ├───Projects
+│           ├───Proxy
+│           ├───Recorded
+│           ├───Render
+│           │   └───.RenderCache
+│           │       ├───12d88eed-613d-4cb9-820e-35b708feec58
+│           │       ├───95b9eee0-9b7c-4041-87a8-6a557d16ca98
+│           │       └───ea4f74db-dfdd-4003-b3bf-568f7b2d34b5
+│           ├───Snapshot
+│           ├───Temp
+│           │   └───WsveProjectBackup
+│           ├───Upload
+│           ├───User Media
+│           │   ├───Device Import
+│           │   ├───Downloaded Media
+│           │   └───Favourite
+│           └───Voiceover
+├───Downloads
+│   ├───Bebas_Neue
+│   ├───Compressed
+│   │   ├───26477592-ramadan-kareem-titles-ShareAE.com
+│   │   │   └───Ramadan Kareem - Titles
+│   │   │       ├───01_After Effect Files
+│   │   │       │   ├───CC 12
+│   │   │       │   ├───CC 2015
+│   │   │       │   ├───CS 5.5
+│   │   │       │   └───CS 6
+│   │   │       ├───02_Assets
+│   │   │       └───03_Help
+│   │   └───3268280-eid-mubarak-ramadan-ShareAE.com
+│   │       └───Eid & Ramadan Mega Pack
+│   │           └───Ramadan Mubarak Arabic
+│   ├───Documents
+│   ├───Montserrat
+│   │   └───static
+│   ├───Music
+│   ├───philosopher
+│   ├───Programs
+│   ├───Roboto
+│   └───Video
+├───Favorites
+│   └───Links
+├───Links
+├───Music
+├───OneDrive
+│   ├───Desktop
+│   ├───Documents
+│   │   ├───Adobe
+│   │   ├───Custom Office Templates
+│   │   └───Wondershare
+│   │       └───Wondershare Filmora
+│   │           └───Installed Effects
+│   │               └───noad
+│   └───Pictures
+│       ├───Camera Roll
+│       ├───Saved Pictures
+│       └───Screenshots
+├───Pictures
+│   ├───Camera Roll
+│   ├───Saved Pictures
+│   └───Screenshots
+├───Saved Games
+├───Searches
+└───Videos
+    └───Captures
+
+16.C:\Users\pptqq>getmac
+
+Physical Address    Transport Name
+=================== ==========================================================
+28-11-A8-3A-F6-0B   \Device\Tcpip_{2B8CA62D-2E0E-4B99-9FA2-CE7E06771C67}
+28-11-A8-3A-F6-0F   Media disconnected
+
+17.C:\Users\pptqq>whoami
+desktop-dte73o2\pptqq
+
+18.C:\Users\pptqq>hostname
+DESKTOP-DTE73O2
+
+19.C:\Users\pptqq>driverquery
+
+Module Name  Display Name           Driver Type   Link Date
+============ ====================== ============= ======================
+1394ohci     1394 OHCI Compliant Ho Kernel
+3ware        3ware                  Kernel        19/05/2015 05:28:03
+ACPI         Microsoft ACPI Driver  Kernel
+AcpiDev      ACPI Devices driver    Kernel
+acpiex       Microsoft ACPIEx Drive Kernel
+acpipagr     ACPI Processor Aggrega Kernel
+AcpiPmi      ACPI Power Meter Drive Kernel
+acpitime     ACPI Wake Alarm Driver Kernel
+Acx01000     Acx01000               Kernel
+ADP80XX      ADP80XX                Kernel        10/04/2015 03:49:48
+AFD          Ancillary Function Dri Kernel
+afunix       afunix                 Kernel
+ahcache      Application Compatibil Kernel
+amdgpio2     AMD GPIO Client Driver Kernel        07/02/2019 16:32:20
+amdi2c       AMD I2C Controller Ser Kernel        20/03/2019 11:57:33
+AmdK8        AMD K8 Processor Drive Kernel
+AmdPPM       AMD Processor Driver   Kernel
+amdsata      amdsata                Kernel        14/05/2015 19:14:52
+amdsbs       amdsbs                 Kernel        12/12/2012 04:21:44
+amdxata      amdxata                Kernel        01/05/2015 07:55:35
+AppID        AppID Driver           Kernel
+applockerflt Smartlocker Filter Dri Kernel
+arcsas       Adaptec SAS/SATA-II RA Kernel        10/04/2015 02:12:07
+AsyncMac     RAS Asynchronous Media Kernel
+atapi        IDE Channel            Kernel
+b06bdrv      QLogic Network Adapter Kernel        25/05/2016 14:03:08
+bam          Background Activity Mo Kernel
+BasicDisplay BasicDisplay           Kernel
+BasicRender  BasicRender            Kernel
+bcmfn2       bcmfn2 Service         Kernel        01/11/2016 09:09:15
+Beep         Beep                   Kernel
+bindflt      Windows Bind Filter Dr File System
+bowser       Browser                File System
+BthA2dp      Microsoft Bluetooth A2 Kernel
+BthEnum      Bluetooth Enumerator S Kernel
+BthHFEnum    Microsoft Bluetooth Ha Kernel
+BthLEEnum    Bluetooth Low Energy D Kernel
+BthMini      Bluetooth Radio Driver Kernel
+BTHMODEM     Bluetooth Modem Commun Kernel
+BthPan       Bluetooth Device (Pers Kernel
+BTHPORT      Bluetooth Port Driver  Kernel
+BTHUSB       Bluetooth Radio USB Dr Kernel
+bttflt       Microsoft Hyper-V VHDP Kernel
+buttonconver Service for Portable D Kernel
+CAD          Charge Arbitration Dri Kernel
+cdfs         CD/DVD File System Rea File System
+cdrom        CD-ROM Driver          Kernel
+cht4iscsi    cht4iscsi              Kernel        05/02/2019 20:51:31
+cht4vbd      Chelsio Virtual Bus Dr Kernel        05/02/2019 20:47:51
+CimFS        CimFS                  File System
+circlass     Consumer IR Devices    Kernel
+CldFlt       Windows Cloud Files Fi File System
+CLFS         Common Log (CLFS)      Kernel
+CmBatt       Microsoft ACPI Control Kernel
+CNG          CNG                    Kernel
+cnghwassist  CNG Hardware Assist al Kernel
+CompositeBus Composite Bus Enumerat Kernel
+condrv       Console Driver         Kernel
+dam          Desktop Activity Moder Kernel
+Dfsc         DFS Namespace Client D File System
+disk         Disk Driver            Kernel
+dmvsc        dmvsc                  Kernel
+dptf_acpi    dptf_acpi              Kernel        24/07/2021 06:15:14
+dptf_cpu     dptf_cpu               Kernel        24/07/2021 06:15:18
+drmkaud      Microsoft Trusted Audi Kernel
+DXGKrnl      LDDM Graphics Subsyste Kernel
+e1i65x64     Intel(R) PRO/1000 PCI  Kernel        12/06/2018 01:01:06
+ebdrv        QLogic 10 Gigabit Ethe Kernel        25/05/2016 14:01:05
+EhStorClass  Enhanced Storage Filte Kernel
+EhStorTcgDrv Microsoft driver for s Kernel
+ErrDev       Microsoft Hardware Err Kernel
+esif_lf      esif_lf                Kernel        24/07/2021 06:15:42
+exfat        exFAT File System Driv File System
+fastfat      FAT12/16/32 File Syste File System
+fdc          Floppy Disk Controller Kernel
+FileCrypt    FileCrypt              File System
+FileInfo     File Information FS Mi File System
+Filetrace    Filetrace              File System
+flpydisk     Floppy Disk Driver     Kernel
+FltMgr       FltMgr                 File System
+FsDepends    File System Dependency File System
+fvevol       BitLocker Drive Encryp Kernel
+gencounter   Microsoft Hyper-V Gene Kernel
+genericusbfn Generic USB Function C Kernel
+GPIOClx0101  Microsoft GPIO Class E Kernel
+GpuEnergyDrv GPU Energy Driver      Kernel
+GSCAuxDriver Intel(R) Graphics Syst Kernel        03/03/2021 19:13:06
+GSCx64       Intel(R) Graphics Syst Kernel        26/04/2021 20:49:50
+HdAudAddServ Microsoft 1.1 UAA Func Kernel
+HDAudBus     Microsoft UAA Bus Driv Kernel
+HidBatt      HID UPS Battery Driver Kernel
+HidBth       Microsoft Bluetooth HI Kernel
+HidEventFilt Intel(R) HID Event Fil Kernel        07/07/2021 19:55:37
+hidi2c       Microsoft I2C HID Mini Kernel
+hidinterrupt Common Driver for HID  Kernel
+HidIr        Microsoft Infrared HID Kernel
+hidspi       Microsoft SPI HID Mini Kernel
+HidUsb       Microsoft HID Class Dr Kernel
+HID_PCI      HID PCI Minidriver for Kernel        07/07/2021 09:35:43
+HPCustomCapD HP Application Driver  Kernel        23/08/2021 23:43:55
+HPKbfDriver  HP EliteOne Healthcare Kernel        06/06/2019 16:14:13
+HpqKbFiltr   HpqKbFilter Driver     Kernel        26/04/2022 12:16:44
+HpSAMD       HpSAMD                 Kernel        27/03/2013 04:36:54
+HTTP         HTTP Service           Kernel
+hvcrash      hvcrash                Kernel
+hvservice    Hypervisor/Virtual Mac Kernel
+HwNClx0101   Microsoft Hardware Not Kernel
+hwpolicy     Hardware Policy Driver Kernel
+hyperkbd     hyperkbd               Kernel
+HyperVideo   HyperVideo             Kernel
+i8042prt     i8042 Keyboard and PS/ Kernel
+iagpio       Intel Serial IO GPIO C Kernel        23/07/2018 16:04:46
+iai2c        Intel(R) Serial IO I2C Kernel        23/07/2018 16:04:39
+iaLPSS2i_GPI Intel(R) Serial IO GPI Kernel        19/04/2018 14:53:24
+iaLPSS2i_GPI Intel(R) Serial IO GPI Kernel        17/04/2018 16:25:15
+iaLPSS2i_GPI Intel(R) Serial IO GPI Kernel        17/04/2018 14:07:03
+iaLPSS2i_GPI Intel(R) Serial IO GPI Kernel        16/05/2018 12:46:36
+iaLPSS2i_I2C Intel(R) Serial IO I2C Kernel        19/04/2018 14:52:58
+iaLPSS2i_I2C Intel(R) Serial IO I2C Kernel        17/04/2018 16:24:40
+iaLPSS2i_I2C Intel(R) Serial IO I2C Kernel        15/07/2019 12:12:12
+iaLPSS2i_I2C Intel(R) Serial IO I2C Kernel        16/05/2018 12:46:02
+iaLPSS2_GPIO Intel(R) Serial IO GPI Kernel        13/07/2021 15:02:32
+iaLPSS2_I2C_ Intel(R) Serial IO I2C Kernel        13/07/2021 15:02:01
+iaLPSS2_SPI_ Intel(R) Serial IO SPI Kernel        19/01/2021 08:17:31
+iaLPSS2_UART Intel(R) Serial IO UAR Kernel        19/01/2021 08:17:05
+iaLPSSi_GPIO Intel(R) Serial IO GPI Kernel        02/02/2015 16:00:09
+iaLPSSi_I2C  Intel(R) Serial IO I2C Kernel        24/02/2015 22:52:07
+iaStorAfs    iaStorAfs              File System   23/07/2021 20:01:47
+iaStorAVC    Intel Chipset SATA RAI Kernel        05/09/2019 19:07:32
+iaStorV      Intel RAID Controller  Kernel        12/04/2011 01:48:16
+iaStorVD     Intel(R) Chipset VMD R Kernel        23/07/2021 20:02:28
+ibbus        Mellanox InfiniBand Bu Kernel        19/06/2019 20:20:09
+ibtusb       Intel(R) Wireless Blue Kernel        14/12/2021 16:14:00
+ICCWDT       Intel(R) Watchdog Time Kernel        05/02/2021 23:13:00
+IDMWFP       IDMWFP                 Kernel        19/12/2018 21:52:11
+igfxn        igfxn                  Kernel        19/02/2022 00:56:49
+IndirectKmd  Indirect Displays Kern Kernel
+IntcAudioBus Intel® Smart Sound Tec Kernel        22/11/2021 19:50:22
+IntcAzAudAdd Service for Realtek HD Kernel        25/01/2022 17:11:05
+IntcBTAu     Intel® Smart Sound Tec Kernel        22/11/2021 19:50:38
+IntcDMic     Intel® Smart Sound Tec Kernel        22/11/2021 19:50:37
+IntcOED      Intel® Smart Sound Tec Kernel        22/11/2021 19:51:56
+IntcUSB      Intel® Smart Sound Tec Kernel        22/11/2021 19:51:18
+intelide     intelide               Kernel
+intelpep     Intel(R) Power Engine  Kernel
+intelpmax    Intel(R) Dynamic Devic Kernel
+intelppm     Intel Processor Driver Kernel
+iorate       Disk I/O Rate Filter D Kernel
+IpFilterDriv IP Traffic Filter Driv Kernel
+IPMIDRV      IPMIDRV                Kernel
+IPNAT        IP Network Address Tra Kernel
+IPT          IPT                    Kernel
+isapnp       isapnp                 Kernel
+iScsiPrt     iScsiPort Driver       Kernel
+ISH          Intel(R) Integrated Se Kernel        07/07/2021 09:35:35
+ISH_BusDrive  ISS Bus Enumerator    Kernel        07/07/2021 09:35:40
+ItSas35i     ItSas35i               Kernel        20/06/2019 14:35:34
+kbdclass     Keyboard Class Driver  Kernel
+kbdhid       Keyboard HID Driver    Kernel
+kdnic        Microsoft Kernel Debug Kernel
+KSecDD       KSecDD                 Kernel
+KSecPkg      KSecPkg                Kernel
+ksthunk      Kernel Streaming Thunk Kernel
+lltdio       Link-Layer Topology Di Kernel
+LSI_SAS      LSI_SAS                Kernel        26/03/2015 02:36:48
+LSI_SAS2i    LSI_SAS2i              Kernel        02/08/2017 20:29:59
+LSI_SAS3i    LSI_SAS3i              Kernel        04/04/2019 13:54:35
+LSI_SSS      LSI_SSS                Kernel        16/03/2013 06:39:38
+luafv        UAC File Virtualizatio File System
+mausbhost    MA-USB Host Controller Kernel
+mausbip      MA-USB IP Filter Drive Kernel
+MbbCx        MBB Network Adapter Cl Kernel
+megasas      megasas                Kernel        05/03/2015 09:36:29
+megasas2i    megasas2i              Kernel        04/04/2019 20:28:53
+megasas35i   megasas35i             Kernel        20/06/2019 17:01:12
+megasr       megasr                 Kernel        04/06/2013 05:02:39
+MEIx64       Intel(R) Management En Kernel        31/10/2021 17:49:45
+Microsoft_Bl Microsoft Bluetooth Av Kernel
+mlx4_bus     Mellanox ConnectX Bus  Kernel        19/06/2019 20:21:08
+MMCSS        Multimedia Class Sched Kernel
+Modem        Modem                  Kernel
+monitor      Microsoft Monitor Clas Kernel
+mouclass     Mouse Class Driver     Kernel
+mouhid       Mouse HID Driver       Kernel
+mountmgr     Mount Point Manager    Kernel
+mpsdrv       Windows Defender Firew Kernel
+MRxDAV       WebDav Client Redirect File System
+mrxsmb       SMB MiniRedirector Wra File System
+mrxsmb10     SMB 1.x MiniRedirector File System
+mrxsmb20     SMB 2.0 MiniRedirector File System
+MsBridge     Microsoft MAC Bridge   Kernel
+Msfs         Msfs                   File System
+msgpiowin32  Common Driver for Butt Kernel
+mshidkmdf    mshidkmdf              Kernel
+mshidumdf    Pass-through HID to UM Kernel
+msisadrv     msisadrv               Kernel
+MSKSSRV      Microsoft Streaming Se Kernel
+MSPCLOCK     Microsoft Streaming Cl Kernel
+MSPQM        Microsoft Streaming Qu Kernel
+MsQuic       MsQuic                 Kernel
+MsRPC        MsRPC                  Kernel
+mssmbios     Microsoft System Manag Kernel
+MSTEE        Microsoft Streaming Te Kernel
+MTConfig     Microsoft Input Config Kernel
+Mup          Mup                    File System
+mvumis       mvumis                 Kernel        24/05/2014 03:39:04
+NativeWifiP  NativeWiFi Filter      Kernel
+ndfltr       NetworkDirect Service  Kernel        19/06/2019 20:18:42
+NDIS         NDIS System Driver     Kernel
+NdisCap      Microsoft NDIS Capture Kernel
+NdisImPlatfo Microsoft Network Adap Kernel
+NdisTapi     Remote Access NDIS TAP Kernel
+Ndisuio      NDIS Usermode I/O Prot Kernel
+NdisVirtualB Microsoft Virtual Netw Kernel
+NdisWan      Remote Access NDIS WAN Kernel
+ndiswanlegac Remote Access LEGACY N Kernel
+NDKPing      NDKPing Driver         Kernel
+ndproxy      NDIS Proxy Driver      Kernel
+Ndu          Windows Network Data U Kernel
+NetAdapterCx Network Adapter Wdf Cl Kernel
+NetBIOS      NetBIOS Interface      File System
+NetBT        NetBT                  Kernel
+netvsc       netvsc                 Kernel
+Netwtw06     ___ Intel(R) Wireless  Kernel        05/09/2018 21:36:41
+Netwtw10     ___ Intel(R) Wireless  Kernel        03/01/2022 16:20:10
+nhi          Thunderbolt(TM) Contro Kernel        13/07/2021 16:30:23
+Npfs         Npfs                   File System
+npsvctrig    Named pipe service tri Kernel
+nsiproxy     NSI Proxy Service Driv Kernel
+Ntfs         Ntfs                   File System
+Null         Null                   Kernel
+nvdimm       Microsoft NVDIMM devic Kernel
+nvraid       nvraid                 Kernel        22/04/2014 01:28:42
+nvstor       nvstor                 Kernel        22/04/2014 01:34:03
+Parport      Parallel port driver   Kernel
+partmgr      Partition driver       Kernel
+pci          PCI Bus Driver         Kernel
+pciide       pciide                 Kernel
+pcmcia       pcmcia                 Kernel
+pcw          Performance Counters f Kernel
+pdc          pdc                    Kernel
+PEAUTH       PEAUTH                 Kernel
+percsas2i    percsas2i              Kernel        15/03/2016 07:50:11
+percsas3i    percsas3i              Kernel        02/06/2018 04:47:02
+PktMon       Packet Monitor Driver  Kernel
+pmem         Microsoft persistent m Kernel
+PNPMEM       Microsoft Memory Modul Kernel
+portcfg      portcfg                Kernel
+PptpMiniport WAN Miniport (PPTP)    Kernel
+Processor    Processor Driver       Kernel
+Psched       QoS Packet Scheduler   Kernel
+QWAVEdrv     QWAVE driver           Kernel
+Ramdisk      Windows RAM Disk Drive Kernel
+RasAcd       Remote Access Auto Con Kernel
+RasAgileVpn  WAN Miniport (IKEv2)   Kernel
+Rasl2tp      WAN Miniport (L2TP)    Kernel
+RasPppoe     Remote Access PPPOE Dr Kernel
+RasSstp      WAN Miniport (SSTP)    Kernel
+rdbss        Redirected Buffering S File System
+rdpbus       Remote Desktop Device  Kernel
+RDPDR        Remote Desktop Device  Kernel
+RdpVideoMini Remote Desktop Video M Kernel
+rdyboost     ReadyBoost             Kernel
+ReFS         ReFS                   File System
+ReFSv1       ReFSv1                 File System
+RFCOMM       Bluetooth Device (RFCO Kernel
+rhproxy      Resource Hub proxy dri Kernel
+rspndr       Link-Layer Topology Di Kernel
+rtux64w10    Realtek USB FE/GbE NIC Kernel        29/11/2017 07:29:18
+s3cap        s3cap                  Kernel
+sbp2port     SBP-2 Transport/Protoc Kernel
+scfilter     Smart card PnP Class F Kernel
+scmbus       Microsoft Storage Clas Kernel
+sdbus        sdbus                  Kernel
+SDFRd        SDF Reflector          Kernel
+sdstor       SD Storage Port Driver Kernel
+SensorsHIDCl UMDF Reflector service Kernel
+SerCx        Serial UART Support Li Kernel
+SerCx2       Serial UART Support Li Kernel
+Serenum      Serenum Filter Driver  Kernel
+Serial       Serial port driver     Kernel
+sermouse     Serial Mouse Driver    Kernel
+sfloppy      High-Capacity Floppy D Kernel
+SgrmAgent    System Guard Runtime M Kernel
+SiSRaid2     SiSRaid2               Kernel        25/09/2008 01:28:20
+SiSRaid4     SiSRaid4               Kernel        02/10/2008 04:56:04
+SmartSAMD    SmartSAMD              Kernel        22/02/2019 00:54:44
+spaceparser  Space Parser           Kernel
+spaceport    Storage Spaces Driver  Kernel
+SpatialGraph Holographic Spatial Gr Kernel
+SpbCx        Simple Peripheral Bus  Kernel
+srv2         Server SMB 2.xxx Drive File System
+srvnet       srvnet                 File System
+stexstor     stexstor               Kernel        27/11/2012 07:02:51
+storahci     Microsoft Standard SAT Kernel
+storflt      Microsoft Hyper-V Stor Kernel
+stornvme     Microsoft Standard NVM Kernel
+storqosflt   Storage QoS Filter Dri File System
+storufs      Microsoft Universal Fl Kernel
+storvsc      storvsc                Kernel
+swenum       Software Bus Driver    Kernel
+SynRMIHID    Synaptics HID Service  Kernel        26/07/2021 12:46:30
+SynStykFilte Synaptics StykFHID Ser Kernel        26/07/2021 12:29:38
+Synth3dVsc   Synth3dVsc             Kernel
+SynTP        Synaptics TouchPad Dri Kernel        26/07/2021 12:29:38
+Tcpip        TCP/IP Protocol Driver Kernel
+Tcpip6       @todo.dll,-100;Microso Kernel
+tcpipreg     TCP/IP Registry Compat Kernel
+tdx          NetIO Legacy TDI Suppo Kernel
+Telemetry    Intel(R) Telemetry Ser Kernel
+terminpt     Microsoft Remote Deskt Kernel
+TPM          TPM                    Kernel
+TsUsbFlt     Remote Desktop USB Hub Kernel
+TsUsbGD      Remote Desktop Generic Kernel
+tunnel       Microsoft Tunnel Minip Kernel
+UASPStor     USB Attached SCSI (UAS Kernel
+UcmCx0101    USB Connector Manager  Kernel
+UcmTcpciCx01 UCM-TCPCI KMDF Class E Kernel
+UcmUcsiAcpiC UCM-UCSI ACPI Client   Kernel
+UcmUcsiCx010 UCM-UCSI KMDF Class Ex Kernel
+Ucx01000     USB Host Support Libra Kernel
+UdeCx        USB Device Emulation S Kernel
+udfs         udfs                   File System
+UEFI         Microsoft UEFI Driver  Kernel
+Ufx01000     USB Function Class Ext Kernel
+UfxChipidea  USB Chipidea Controlle Kernel
+ufxsynopsys  USB Synopsys Controlle Kernel
+umbus        UMBus Enumerator Drive Kernel
+UmPass       Microsoft UMPass Drive Kernel
+UrsChipidea  Chipidea USB Role-Swit Kernel
+UrsCx01000   USB Role-Switch Suppor Kernel
+UrsSynopsys  Synopsys USB Role-Swit Kernel
+usbaudio     USB Audio Driver (WDM) Kernel
+usbaudio2    USB Audio 2.0 Service  Kernel
+usbccgp      Microsoft USB Generic  Kernel
+usbcir       eHome Infrared Receive Kernel
+usbehci      Microsoft USB 2.0 Enha Kernel
+usbhub       Microsoft USB Standard Kernel
+USBHUB3      SuperSpeed Hub         Kernel
+usbohci      Microsoft USB Open Hos Kernel
+usbprint     Microsoft USB PRINTER  Kernel
+usbser       Microsoft USB Serial D Kernel
+USBSTOR      USB Mass Storage Drive Kernel
+usbuhci      Microsoft USB Universa Kernel
+usbvideo     USB Video Device (WDM) Kernel
+USBXHCI      USB xHCI Compliant Hos Kernel
+vdrvroot     Microsoft Virtual Driv Kernel
+VerifierExt  Driver Verifier Extens Kernel
+vhdmp        vhdmp                  Kernel
+vhf          Virtual HID Framework  Kernel
+Vid          Vid                    Kernel
+VirtualRende VirtualRender          Kernel
+vmbus        Virtual Machine Bus    Kernel
+VMBusHID     VMBusHID               Kernel
+vmgid        Microsoft Hyper-V Gues Kernel
+volmgr       Volume Manager Driver  Kernel
+volmgrx      Dynamic Volume Manager Kernel
+volsnap      Volume Shadow Copy dri Kernel
+volume       Volume driver          Kernel
+vpci         Microsoft Hyper-V Virt Kernel
+vsmraid      vsmraid                Kernel        23/04/2014 02:21:41
+VSTXRAID     VIA StorX Storage RAID Kernel        22/01/2013 02:00:28
+vwifibus     Virtual Wireless Bus D Kernel
+vwififlt     Virtual WiFi Filter Dr Kernel
+vwifimp      Virtual WiFi Miniport  Kernel
+WacomPen     Wacom Serial Pen HID D Kernel
+wanarp       Remote Access IP ARP D Kernel
+wanarpv6     Remote Access IPv6 ARP Kernel
+wcifs        Windows Container Isol File System
+wcnfs        Windows Container Name File System
+WdBoot       Microsoft Defender Ant Kernel
+Wdf01000     Kernel Mode Driver Fra Kernel
+WdFilter     Microsoft Defender Ant File System
+wdiwifi      WDI Driver Framework   Kernel
+WdmCompanion WdmCompanionFilter     Kernel
+WdNisDrv     Microsoft Defender Ant Kernel
+WFPLWFS      Microsoft Windows Filt Kernel
+WiManH       WiMan Service          Kernel        07/12/2021 20:19:27
+WIMMount     WIMMount               File System
+WindowsTrust Windows Trusted Execut Kernel
+WindowsTrust Microsoft Windows Trus Kernel
+WinMad       WinMad Service         Kernel        19/06/2019 20:18:11
+WinNat       Windows NAT Driver     Kernel
+WINUSB       WinUsb Driver          Kernel
+WinVerbs     WinVerbs Service       Kernel        19/06/2019 20:18:12
+WirelessButt HP Wireless Button Dri Kernel        12/11/2021 11:40:51
+WmiAcpi      Microsoft Windows Mana Kernel
+Wof          Windows Overlay File S File System
+WpdUpFltr    WPD Upper Class Filter Kernel
+ws2ifsl      Winsock IFS Driver     Kernel
+WudfPf       User Mode Driver Frame Kernel
+WUDFRd       Windows Driver Foundat Kernel
+WUDFWpdFs    WPD File System driver Kernel
+WUDFWpdMtp   WUDFWpdMtp             Kernel
+xboxgip      Xbox Game Input Protoc Kernel
+xinputhid    XINPUT HID Filter Driv Kernel
+MpKsl8e74d86 MpKsl8e74d866          Kernel
+
+20.C:\Users\pptqq>sc
+DESCRIPTION:
+        SC is a command line program used for communicating with the
+        Service Control Manager and services.
+USAGE:
+        sc <server> [command] [service name] <option1> <option2>...
+
+
+        The option <server> has the form "\\ServerName"
+        Further help on commands can be obtained by typing: "sc [command]"
+        Commands:
+          query-----------Queries the status for a service, or
+                          enumerates the status for types of services.
+          queryex---------Queries the extended status for a service, or
+                          enumerates the status for types of services.
+          start-----------Starts a service.
+          pause-----------Sends a PAUSE control request to a service.
+          interrogate-----Sends an INTERROGATE control request to a service.
+          continue--------Sends a CONTINUE control request to a service.
+          stop------------Sends a STOP request to a service.
+          config----------Changes the configuration of a service (persistent).
+          description-----Changes the description of a service.
+          failure---------Changes the actions taken by a service upon failure.
+          failureflag-----Changes the failure actions flag of a service.
+          sidtype---------Changes the service SID type of a service.
+          privs-----------Changes the required privileges of a service.
+          managedaccount--Changes the service to mark the service account
+                          password as managed by LSA.
+          qc--------------Queries the configuration information for a service.
+          qdescription----Queries the description for a service.
+          qfailure--------Queries the actions taken by a service upon failure.
+          qfailureflag----Queries the failure actions flag of a service.
+          qsidtype--------Queries the service SID type of a service.
+          qprivs----------Queries the required privileges of a service.
+          qtriggerinfo----Queries the trigger parameters of a service.
+          qpreferrednode--Queries the preferred NUMA node of a service.
+          qmanagedaccount-Queries whether a services uses an account with a
+                          password managed by LSA.
+          qprotection-----Queries the process protection level of a service.
+          quserservice----Queries for a local instance of a user service template.
+          delete----------Deletes a service (from the registry).
+          create----------Creates a service. (adds it to the registry).
+          control---------Sends a control to a service.
+          sdshow----------Displays a service's security descriptor.
+          sdset-----------Sets a service's security descriptor.
+          showsid---------Displays the service SID string corresponding to an arbitrary name.
+          triggerinfo-----Configures the trigger parameters of a service.
+          preferrednode---Sets the preferred NUMA node of a service.
+          GetDisplayName--Gets the DisplayName for a service.
+          GetKeyName------Gets the ServiceKeyName for a service.
+          EnumDepend------Enumerates Service Dependencies.
+
+        The following commands don't require a service name:
+        sc <server> <command> <option>
+          boot------------(ok | bad) Indicates whether the last boot should
+                          be saved as the last-known-good boot configuration
+          Lock------------Locks the Service Database
+          QueryLock-------Queries the LockStatus for the SCManager Database
+EXAMPLE:
+        sc start MyService
+
+
+QUERY and QUERYEX OPTIONS:
+        If the query command is followed by a service name, the status
+        for that service is returned.  Further options do not apply in
+        this case.  If the query command is followed by nothing or one of
+        the options listed below, the services are enumerated.
+    type=    Type of services to enumerate (driver, service, userservice, all)
+             (default = service)
+    state=   State of services to enumerate (inactive, all)
+             (default = active)
+    bufsize= The size (in bytes) of the enumeration buffer
+             (default = 4096)
+    ri=      The resume index number at which to begin the enumeration
+             (default = 0)
+    group=   Service group to enumerate
+             (default = all groups)
+
+SYNTAX EXAMPLES
+sc query                - Enumerates status for active services & drivers
+sc query eventlog       - Displays status for the eventlog service
+sc queryex eventlog     - Displays extended status for the eventlog service
+sc query type= driver   - Enumerates only active drivers
+sc query type= service  - Enumerates only Win32 services
+sc query state= all     - Enumerates all services & drivers
+sc query bufsize= 50    - Enumerates with a 50 byte buffer
+sc query ri= 14         - Enumerates with resume index = 14
+sc queryex group= ""    - Enumerates active services not in a group
+sc query type= interact - Enumerates all interactive services
+sc query type= driver group= NDIS     - Enumerates all NDIS drivers
