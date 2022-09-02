@@ -18,8 +18,8 @@ def index():
         query = f"insert into buah(nama, detail) values ('{nama}', '{detail}')"
         curs.execute(query)
         conn.commit()        
-        # curs.close()
-        # conn.close()
+        curs.close()
+        conn.close()
         
         # print(20*"=")
         # print(nama)
@@ -32,7 +32,7 @@ def index():
     data = curs.fetchall()
     curs.close()
     conn.close()
-    # data = ["apel", "pear", "anggur"]
+    # data = ["apel", "pear", "anggur", "jeruk", "belimbing", "kelengkeng"]
     return render_template("index.html", context=data)
 
 
