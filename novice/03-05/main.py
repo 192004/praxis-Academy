@@ -79,26 +79,16 @@ def update(buah_id):
         password="fitri19"
     )
     curs = conn.cursor()
-    # data = curs.fetchone()
-    # if request.method == "POST":
-    #     nama = request.form.get("nama")
-    #     detail = request.form.get("detail")
-    #     query = f"update buah set nama = ('{nama}'), detail=('{detail}') where id = {buah_id} "
-    #     curs.execute(query)
-    #     conn.commit()        
-    #     curs.close()
-    #     conn.close()
-    # print (data)
-    # return render_template("update.html", context=data)
-    namaLama = 'bengkoang'
-    namaBaru = 'strowbery'
-    detailBaru = 'sepet'
+   
+    namaLama = 'jeruk'
+    namaBaru = 'ceri'
+    detailBaru = 'seger'
 
     query = f"update buah set nama='{namaBaru}', detail='{detailBaru}' where nama ='{namaLama}'"
     curs.execute(query)
     conn.commit()
+    conn.close()
     print("data masuk")
-
     return redirect("/")
 
 if __name__ == "__main__":
