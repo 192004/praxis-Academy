@@ -97,7 +97,7 @@ def update(buah_id):
     data = curs.fetchone()
     conn.close()
     conn.close()
-    # print("data masuk")
+     # print("data masuk")
     return render_template("update.html", context=data)
 
 if __name__ == "__main__":
