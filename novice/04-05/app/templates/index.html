@@ -13,49 +13,42 @@
 }
 
 td, th {
-  border: 1px solid #0c1feb;
+  border: 1px solid #18e85a;
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #43c8dc;
+  background-color: #d2ea18;
 }
 </style>
     
 </head> 
 <body>
     <div>
-        <h1> DAFTAR INVENTARIS PP.QORYATUSSALAM</h1>
+        <h1>Updating </h1>
         <form action="" method="post">
             <label for="">nama</label>
-            <input name="nama_barang" type="text" required>
-            <label for="">jumlah</label>
-            <input name="jumlah_barang" type="text" required>
-            <label for="">kode</label>
-            <input name="kode_barang" type="text" required>
-            <label for="">keterangan</label>
-            <input name="keterangan" type="text" required>
+            <input name="nama" type="text" required>
+            <label for="">detail</label>
+            <input name="detail" type="text" required>
             <button type="submit">kirim</button>
 
         </form>
+        
+        <hr>
+        <h1>RESPONS</h1>
 
         <table>
             <tr>
                 <th>id</th>
-                <th>nama barang</th>
-                <th>jumlah barang</th>
-                <th>kode barang</th>
-                <th>keterangan</th>
+                <th>nama</th>
                 <th>detail</th>
             </tr>
             {% for d in context %}
             <tr>
                 <td>{{loop.index}}</td>
                 <td>{{d[1]}}</td>
-                <td>{{d[2]}}</td>
-                <td>{{d[3]}}</td>
-                <td>{{d[4]}}</td>
                 <td>
                     <a href="/detail/{{d[0]}}">
                         <button class="btn-info">detail</button>
@@ -71,6 +64,7 @@ tr:nth-child(even) {
             </tr>
             {% endfor %}
         </table>
+            
     
     </div>
  </body>

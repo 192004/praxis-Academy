@@ -22,8 +22,6 @@ def index():
         query = f"insert into inventaris(nama_barang, jumlah_barang, kode_barang, keterangan) values ('{nama_barang}','{jumlah_barang}', '{kode_barang}', '{keterangan}')"
         curs.execute(query)
         conn.commit() 
-        curs.close()
-        conn.close()  
 
     print(request.method)
     query = f"select * from inventaris"
@@ -46,8 +44,7 @@ def detail(inventaris_id):
     curs.execute(query)
     data = curs.fetchone()
     conn.commit()        
-    curs.close()
-    conn.close()
+   
     print (data)
     return render_template("detail.html", context=data)
 
@@ -63,8 +60,7 @@ def delete(inventaris_id):
     query = f"delete from inventaris where id = {inventaris_id}"
     curs.execute(query)
     conn.commit()        
-    curs.close()
-    conn.close()
+   
     return redirect ("/")
 
 @app.route("/update/<inventaris_id>" ,methods=["GET", "POST"])
@@ -81,14 +77,14 @@ def update(inventaris_id):
         jumlah_barang = request.form.get("jumlah_barang")
         kode_barang= request.form.get("kode_barang")
         keterangan = request.form.get("keterangan")
-        query = f"insert into inventaris(nama_barang, jumlah_barang, kode_barang, keterangan) values ('{nama_barang}','{jumlah_barang}', '{kode_barang}', '{keterangan}')"
+        query =  f"update inventaris set nama_barang = '{nama_barang}', jumlah_barang = '{jumlah_barang}', kode_barang = '{kode_barang}', keterangan = '{keterangan}', detail = '{detail}' where id = {inventaris_id}"
         curs.execute(query)
         conn.commit()   
         return redirect("/")
    
     query = f"select * from inventaris"
     curs.execute(query)
-    data = curs.fetchall()
+    data = curs.fetchone()
     curs.close()
     conn.close()
     return render_template("index.html", context=data)
